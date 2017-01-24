@@ -1,1 +1,16 @@
 /* custom styles */
+
+header h1 {
+  float:left;
+  margin: 0;
+}
+
+li {
+  display: block;
+  float: right;
+  padding: 10px;
+}
+
+section {
+  clear:both;
+}
