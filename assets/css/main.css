@@ -13,5 +13,10 @@ li {
 
 section {
   clear:both;
-  text-align: center;
+}
+
+.home-image {
+  display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
