@@ -28,6 +28,16 @@ li {
   text-transform: uppercase;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #678;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: black;
+}
+
 section {
   clear:both;
 }
