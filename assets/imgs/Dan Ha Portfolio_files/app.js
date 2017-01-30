@@ -1,4 +1,4 @@
-// js link check
+// sanity check
 $( document ).ready(function() {
     console.log("app.js linked.");
 
@@ -23,25 +23,25 @@ $(function() {
 var projectData = [
   {
 	"projectThumbnail": "http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg",
-	"projectName" : "Project 1",
+	"projectName" : "Gratitude Clouds",
 	"projectLink" : "http://www.cnn.com"
   },
   {
 	"projectThumbnail" : "http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg",
-	"projectName" : "Project 2",
+	"projectName" : "Gratitude Clouds 2",
 	"projectLink" : "http://www.bbc.com",
   },
   {
   "projectThumbnail" : "http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg",
-  "projectName" : "Project 3",
+  "projectName" : "Gratitude Clouds 2",
   "projectLink" : "http://www.bbc.com",
-  }
+  },
 ]
 
 //fills gallery with project thumbnails and their links
   $("div.row.gallery-container").empty();
   for (var i = 0; i < projectData.length; i++) {
-    $("div.row.gallery-container").append(`<div class="hovereffect col-sm-4 col-xs-6"><img class="img-responsive" src="${projectData[i].projectThumbnail}" />
+    $("div.row.gallery-container").append(`<div class="hovereffect col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="${projectData[i].projectThumbnail}" />
                     <div class="overlay">
                         <h2>
                         <a href="${projectData[i].projectLink}">${projectData[i].projectName}</a>
@@ -54,4 +54,4 @@ var projectData = [
 
 
 
-}); //end document.ready check
+}); //end sanity check
