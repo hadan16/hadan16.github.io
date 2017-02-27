@@ -24,7 +24,7 @@ var projectData = [
   {
 	"projectThumbnail": "http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg",
 	"projectName" : "Project 1",
-	"projectLink" : "http://www.cnn.com"
+	"projectLink" : "http://www.bbc.com"
   },
   {
 	"projectThumbnail" : "http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg",
