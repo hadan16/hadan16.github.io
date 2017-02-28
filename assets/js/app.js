@@ -29,27 +29,41 @@ var projectData = [
   {
 	"projectThumbnail" : "http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg",
 	"projectName" : "Project 2",
-	"projectLink" : "http://www.bbc.com",
+	"projectLink" : "http://www.cnn.com",
   },
   {
   "projectThumbnail" : "http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg",
   "projectName" : "Project 3",
-  "projectLink" : "http://www.bbc.com",
+  "projectLink" : "http://www.foxnews.com",
   }
 ]
 
 //fills gallery with project thumbnails and their links
-  $("div.row.gallery-container").empty();
-  for (var i = 0; i < projectData.length; i++) {
-    $("div.row.gallery-container").append(`<div class="hovereffect col-sm-4 col-xs-6"><img class="img-responsive" src="${projectData[i].projectThumbnail}" />
-                    <div class="overlay">
-                        <h2>
-                        <a href="${projectData[i].projectLink}">${projectData[i].projectName}</a>
-                        </h2>
+  // $("div.row.gallery-container").empty();
+  // for (var i = 0; i < projectData.length; i++) {
+  //   $("div.row.gallery-container").append(`<div class="hovereffect col-sm-4 col-xs-6"><img class="img-responsive" src="${projectData[i].projectThumbnail}" />
+  //                   <div class="overlay">
+  //                       <h2>
+  //                       <a href="${projectData[i].projectLink}">${projectData[i].projectName}</a>
+  //                       </h2>
+  //                   </div>
+  //                 </div>
+  //                 `)
+  //               }
+
+  //fills gallery with project thumbnails and their links
+    $("div.row.gallery-container").empty();
+
+    projectData.forEach(function(index){
+      $("div.row.gallery-container").append(`<div class="hovereffect col-sm-4 col-xs-6"><img class="img-responsive" src="${index.projectThumbnail}" />
+                      <div class="overlay">
+                          <h2>
+                          <a href="${index.projectLink}">${index.projectName}</a>
+                          </h2>
+                      </div>
                     </div>
-                  </div>
-                  `)
-                }
+                    `);
+    });
 
 
 
